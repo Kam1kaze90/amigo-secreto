@@ -43,5 +43,13 @@ function sortearAmigo() {
       alert("No existen amigos cargados.")
    }
    mostrarAmigos();
+   document.getElementById("botonReinicio").style.display = "block";
+}
+
+function reiniciar() {
+   amigos = [];
+   document.getElementById("botonReinicio").style.display = "none";
+   document.getElementById("listaAmigos").innerHTML = "";
+   document.getElementById("resultado").innerHTML = "";
 }
 
